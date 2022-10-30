@@ -46,8 +46,8 @@ public class bulletblue : MonoBehaviour
         {
             damage += 5;
         }
-        daamage.health -= damage;
-        if (daamage.health <= 0)
+        daamage.Health -= damage;
+        if (daamage.Health <= 0)
         {
             FindObjectOfType<gamemanager>().gold += 5;
             Destroy(target.gameObject);

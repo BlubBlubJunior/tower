@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class enemy : MonoBehaviour
 {
-    public int health;
-    
-
-    void Update()
-    {
-         
-    }
+    public int Health;
+   
 }
