@@ -19,7 +19,12 @@ public class wavespawner : MonoBehaviour
 
     void Update()
     {
-        if(spawnstart == true)
+        if (wavenumber >= 10)
+        {
+            panel.SetActive(true);
+            spawnstart = false;
+        }
+        if (spawnstart == true)
         {
             if (countdown <= 0f)
             {
@@ -27,11 +32,7 @@ public class wavespawner : MonoBehaviour
                 countdown = timebetweenwaves;
             }
         }
-        if (wavenumber >= 10)
-        {
-            panel.SetActive(true);
-            spawnstart = false;
-        }
+        
 
         countdown -= Time.deltaTime;
     }
