@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class gamemanager : MonoBehaviour
 {
@@ -18,6 +19,10 @@ public class gamemanager : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("startscreen");
+        }
         golddisplay.text = gold.ToString();
         if (Input.GetMouseButtonDown(0) && buildingtoplace != null)
         {

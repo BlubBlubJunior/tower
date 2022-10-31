@@ -7693,7 +7693,7 @@ MonoBehaviour:
   spawnpoint: {fileID: 448211525}
   timebetweenwaves: 20
   countdown: 8
-  wavenumber: 5
+  wavenumber: 1
   panel: {fileID: 126004231}
 --- !u!114 &646682503
 MonoBehaviour:
